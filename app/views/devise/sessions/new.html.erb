@@ -1,0 +1,54 @@
+
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h2>Other</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Login & Register</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Uren's Breadcrumb Area End Here -->
+<!-- Begin Uren's Login Register Area -->
+<div class="uren-login-register_area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-xs-12 col-lg-6">
+                <!-- Login Form s-->
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                    <div class="login-form">
+                        <h4 class="login-title">Login</h4>
+                        <div class="row">
+                            <div class="col-md-12 col-12">
+                                <%= f.label :Email_Address%>
+                                <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+                            </div>
+                            <div class="col-12 mb--20">
+                                <%= f.label :password %>
+                                <%= f.password_field :password, autocomplete: "current-password" %>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="check-box">
+                                  <%= f.check_box :remember_me %>
+                                  <%= f.label :remember_me %>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="forgotton-password_info">
+                                  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+                                  </div>
+                            </div>
+                            <div class="actions">
+                                <%= f.submit "Log in", class:"uren-login_btn"  %>
+                                <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

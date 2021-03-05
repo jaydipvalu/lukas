@@ -1,0 +1,49 @@
+
+<div class="breadcrumb-area">
+    <div class="container">
+        <div class="breadcrumb-content">
+            <h2>Other</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Login & Register</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Uren's Breadcrumb Area End Here -->
+<!-- Begin Uren's Login Register Area -->
+<div class="uren-login-register_area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                    <div class="login-form">
+                        <h4 class="login-title">Register</h4>
+                        <div class="row">
+                            <div class="col-md-12">
+                              <%= f.label :Email_Address %>
+                              <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email Address" %>
+                            </div>
+                            <div class="col-md-6">
+                              <%= f.label :password %>
+                              <% if @minimum_password_length %>
+                              <em>(<%= @minimum_password_length %> characters minimum)</em>
+                              <% end %><br />
+                              <%= f.password_field :password, autocomplete: "new-password", placeholder: "password"%>
+                            </div>
+                            <div class="col-md-6">
+                              <%= f.label :password_confirmation %><br />
+                              <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder:"Confirm Password"%>
+                            </div>
+                            <div class="actions">
+                                <%= f.submit "Sign up",class:"uren-register_btn" %>
+                            </div>
+
+                        </div>
+                        <%= link_to "Log in", new_session_path(resource_name) %>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</div>

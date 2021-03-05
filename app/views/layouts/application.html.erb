@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lukas</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body  class="template-color-1">
+
+    <div class="main-wrapper">
+      <%= render "layouts/header"%>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+
+      <%= render "layouts/footer"%>
+    </div>
+
+  </body>
+</html>
