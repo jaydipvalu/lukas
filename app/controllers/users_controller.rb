@@ -8,4 +8,3 @@ class UsersController < ApplicationController
   # UserMailer.welcome_email(email).deliver_later!(wait: 10.seconds)
   # # redirect somewhere
 end
-end

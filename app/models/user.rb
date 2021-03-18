@@ -11,7 +11,8 @@ class User < ApplicationRecord
   after_commit :send_welcome_email, on: :create
 
   def send_welcome_email
-    #TestJob.welcome_email(self).deliver_later
-     TestJob.perform_later(id)
+  #TestJob.welcome_email(self).deliver_later
+  TestJob.perform_later(id)
   end
+
 end

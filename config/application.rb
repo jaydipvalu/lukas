@@ -18,6 +18,10 @@ module Lukas
        config.active_job.queue_adapter = :sidekiq
        # config.active_job.queue_adapter = :resque
        #config.active_job.queue_adapter = :delayed_job
+       I18n.available_locales = [:en, :gu]
+
+       # I18n.default_locale = :en
+
 
   end
 end

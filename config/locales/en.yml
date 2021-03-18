@@ -30,4 +30,23 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  menu:
+    home: 'Home'
+    shop: 'SHOP'
+    specials: 'SPECIALS'
+    pages: 'PAGES'
+    about us: 'ABOUT US'
+    contact: 'CONTACT'
+    blog: 'BLOG'
+    currency: 'Currency'
+    language: 'Language'
+    my account: 'My Account'
+    login: 'Login'
+    enter your search key : 'Enter your search key ...'
+
+  account:
+    login: 'Login'
+    email address: 'Email Address'
+    password: 'password'
+
   hello: "Hello world"

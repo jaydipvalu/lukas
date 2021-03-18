@@ -6,11 +6,11 @@
                <div class="main-menu_area position-relative">
                   <nav class="main-nav">
                      <ul>
-                        <li class="dropdown-holder active">
-                           <a href="<%=root_path%>">Home</a>
+                        <li class="dropdown-holde r active">
+                          <%= link_to t('menu.home'),root_path %>
                         </li>
                         <li class="megamenu-holder ">
-                           <a href="shop-left-sidebar.html">Shop <i class="ion-ios-arrow-down"></i></a>
+                           <a href="shop-left-sidebar.html"><%=t('menu.shop')%> <i class="ion-ios-arrow-down"></i></a>
                            <ul class="hm-megamenu">
                               <li>
                                  <ul>
@@ -18,11 +18,11 @@
                                     <li><a href="single-product.html">Single Product</a></li>
                                     </li>
                                  </ul>
-                              </li>
+                               </li>
                            </ul>
-                        <li><a href="javascript:void(0)">Specials</a></li>
+                        <li><a href="javascript:void(0)"><%=t('menu.specials')%> </a></li>
                         <li class="">
-                           <a href="javascript:void(0)">Pages <i class="ion-ios-arrow-down"></i></a>
+                           <a href="javascript:void(0)"><%=t('menu.pages')%>  <i class="ion-ios-arrow-down"></i></a>
                            <ul class="hm-dropdown">
                               <li><a href="my-account.html">My Account</a></li>
                               <% if user_signed_in? %>
@@ -34,10 +34,11 @@
 
                            </ul>
                         </li>
-                        <li class=""><a href="about-us.html">About Us</a></li>
-                        <li class=""><a href="contact.html">Contact</a></li>
+                        <li class=""><a href="about-us.html"><%=t('menu.about us')%> </a></li>
                         <li class="">
-                           <a href="blog-left-sidebar.html">Blog <i class="ion-ios-arrow-down"></i></a>
+                          <%=link_to t('menu.contact'),contact_path%>
+                        <li class="">
+                           <a href="blog-left-sidebar.html"><%=t('menu.blog')%> <i class="ion-ios-arrow-down"></i></a>
                            <ul class="hm-dropdown">
                               <li>
                                  <a href="blog-left-sidebar.html">Grid View</a>
@@ -82,7 +83,7 @@
                   <div class="ht-menu">
                      <ul>
                         <li>
-                           <a href="">Currency<i class="fa fa-chevron-down"></i></a>
+                           <a href=""><%=t('menu.currency')%><i class="fa fa-chevron-down"></i></a>
                            <ul class="ht-dropdown ht-currency">
                               <li><a href="javascript:void(0)">€ EUR</a></li>
                               <li class="active"><a href="javascript:void(0)">£ Pound Sterling</a></li>
@@ -90,20 +91,26 @@
                            </ul>
                         </li>
                         <li>
-                           <a href="">Language <i class="fa fa-chevron-down"></i></a>
+                           <a href=""><%=t('menu.language')%> <i class="fa fa-chevron-down"></i></a>
                            <ul class="ht-dropdown">
-                             <li class="active"><a href="javascript:void(0)"><%=image_tag "1.jpg", alt: "JB's Language Icon"%>English</a></li>
-                              <li><a href="javascript:void(0)"><%=image_tag "2.jpg", alt: "JB's Language Icon"%>Français</a>
-                              </li>
+                             <li><%= link_to 'Gujarati',locale: 'gu' %></li>
+                             <li><%= link_to 'English', locale: 'en' %></li>
                            </ul>
+                           <!-- <ul class="ht-dropdown">
+                             <li>
+                               <%=image_tag "1.jpg", alt: "JB's Language Icon"%><%=link_to_unless_current "English",local:'en'%></li>
+                              <li>
+                                <%=image_tag "2.jpg", alt: "JB's Language Icon"%><%=link_to_unless_current "Gujarat",local:'gu'%>
+                              </li>
+                           </ul> -->
                         </li>
                         <li>
-                           <a href="">My Account<i class="fa fa-chevron-down"></i></a>
+                           <a href=""><%=t ('menu.my account')%><i class="fa fa-chevron-down"></i></a>
                            <ul class="ht-dropdown ht-my_account">
                              <% if user_signed_in? %>
                              <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete,  class:'links' %></li>
                              <% else %>
-                             <li><%= link_to 'Login', new_user_session_path, class: 'links'%></li>
+                             <li><%= link_to t('menu.login'), new_user_session_path, class: 'links'%></li>
                              <li><%= link_to 'Register', new_user_registration_path, class:'links'%></li>
                              <% end %>
                            </ul>

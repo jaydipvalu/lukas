@@ -1,5 +1,6 @@
 class CarsController < ApplicationController
   def index
+   console
     @cars = Car.page(params[:page]).per(2)
     @cars = if params[:order] == 'high'
       @cars.high
@@ -16,7 +17,7 @@ class CarsController < ApplicationController
 
   end
   def show
-    @cars= Car.find_by(id: params[:id])
+    @cars = Car.find_by(id: params[:id])
   end
 
   def car_params

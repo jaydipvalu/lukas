@@ -4,4 +4,6 @@ class HomeController < ApplicationController
     @cars = @cars.where('name like ? or brand_id like ? or model_id like ?',
       "%#{params[:name]}%","%#{params[:name]}%","%#{params[:name]}%") if params[:name].present?
   end
+  def contact
+  end
 end

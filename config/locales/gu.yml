@@ -1,0 +1,20 @@
+gu:
+  menu:
+    home: 'ઘર'
+    shop: 'દુકાન'
+    specials: 'ખાસ'
+    pages: 'પૃષ્ઠો'
+    about us: 'અમારા વિશે'
+    contact: 'સંપર્ક'
+    blog: 'બ્લોગ'
+    currency: 'ચલણ'
+    language: 'ભાષા'
+    my account: 'મારું ખાતું'
+    login: 'પ્રવેશ કરો'
+    enter your search key : 'તમારી શોધ કી દાખલ કરો ...'
+    cart: 'કાર્ટ'
+
+  account:
+    login: 'પ્રવેશ કરો'
+    email address: 'ઈ-મેઈલ સરનામું'
+    password: 'પાસવર્ડ'
