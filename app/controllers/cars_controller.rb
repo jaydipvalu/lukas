@@ -1,6 +1,5 @@
 class CarsController < ApplicationController
   def index
-   console
     @cars = Car.page(params[:page]).per(2)
     @cars = if params[:order] == 'high'
       @cars.high

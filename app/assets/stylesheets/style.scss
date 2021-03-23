@@ -955,7 +955,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 
 .popup_wrapper .test {
   background: #ffffff;
-  background-image: url("../images/newsletters/bg-1.jpg");
+  background-image: image-url("bg-1.jpg");
   background-position: right;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1569,7 +1569,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 /* --Slider Background Image-- */
 .bg-1,
 .bg-2 {
-  background-image: url("../images/slider/1.jpg");
+  background-image: ("1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1584,12 +1584,12 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .bg-2 {
-  background-image: url("../images/slider/2.jpg");
+  background-image: ("2.jpg");
 }
 
 .bg-3,
 .bg-4 {
-  background-image: url("../images/slider/3.jpg");
+  background-image: ("3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1611,12 +1611,12 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .bg-4 {
-  background-image: url("../images/slider/4.jpg");
+  background-image: ("4.jpg");
 }
 
 .bg-5,
 .bg-6 {
-  background-image: url("../images/slider/5.jpg");
+  background-image: ("5.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1631,7 +1631,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .bg-6 {
-  background-image: url("../images/slider/6.jpg");
+  background-image: ("6.jpg");
 }
 
 /* ---Slider Dots--- */
@@ -2760,7 +2760,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .uren-banner_area .banner-item .banner-img-1 {
-  background-image: image-url("photo-1493238792000-8113da705763.jpeg");
+  background-image:image-("photo-1493238792000-8113da705763.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2774,7 +2774,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .uren-banner_area .banner-item .banner-img-1.banner-img-2 {
-  background-image:image-url("photo-1566927729021-3d1855a0ef21.jpeg");
+  background-image:image-("photo-1566927729021-3d1855a0ef21.jpeg");
 }
 
 .uren-banner_area .banner-item .banner-content {
@@ -2913,7 +2913,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .uren-banner_area-3 .banner-item .banner-img {
-  background-image: image-url("1-6.jpg");
+  background-image:image-url("1-6.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -3521,7 +3521,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 }
 
 .best-selling-product_area .best-selling_banner {
-  background-image: url("../images/banner/2-6.jpg");
+  background-image:image-url("2-6.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4480,7 +4480,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 /*  22 - Components - Breadcrumb
 /*----------------------------------------*/
 .breadcrumb-area {
-  background-image: url("shop.jpg");
+  background-image: image-url("shop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -4847,7 +4847,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 /*  26 - Components - Testimonial
 /*-------------------------------------------*/
 .testimonial-area {
-  background-image: url("../images/testimonial/bg-1.jpg");
+  background-image: image-url("bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -6283,7 +6283,7 @@ button, .global-overlay, .quantity .cart-plus-minus > .qtybutton, .price-filter 
 /*  26 - Section - Footer
 /*----------------------------------------*/
 .footer-top_area {
-  background-image: url("bg-1.jpg");
+  background-image: image-url("bg-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
