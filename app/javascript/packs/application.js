@@ -9,7 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 require("jquery-1.12.4.min")
-// require("modernizr-2.8.3.min")
+require("modernizr-2.8.3.min")
 require("popper.min")
 require("bootstrap.min")
 require("slick.min")

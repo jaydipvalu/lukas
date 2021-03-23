@@ -6,6 +6,15 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       ## Database authenticatable
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
+      t.string :name, limit: 50
+      t.date :brith_date
+      t.string :pincode, limit: 6
+      t.string :gender, limit: 1
+      t.string :phone, limit: 15
+      t.string :city, limit: 50
+      t.string :state, limit: 50
+      t.string :country, limit: 50
+      t.string :adress, limit: 50
 
       ## Recoverable
       t.string   :reset_password_token
@@ -15,6 +24,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.datetime :remember_created_at
 
       ## Trackable
+
       # t.integer  :sign_in_count, default: 0, null: false
       # t.datetime :current_sign_in_at
       # t.datetime :last_sign_in_at
